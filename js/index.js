@@ -18,7 +18,7 @@ const app = Vue.createApp({
         window.location.href = 'product.html';
       })
       .catch((err)=> {
-        alert(err);
+        alert(err.data.message);
       })
     },
   },
